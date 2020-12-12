@@ -2,7 +2,7 @@
 	"name": "Fathom",
 	"description": "Fathom Lite. Simple, privacy-focused website analytics. Built with Golang & Preact.",
 	"keywords": ["analytics"],
-	"repository": "https://github.com/epicalxyz/fathom",
+	"repository": "https://github.com/epicalxyz/Fathom-Lite",
 	"scripts": {},
 	"env": {
 		"FATHOM_GZIP": "true",
