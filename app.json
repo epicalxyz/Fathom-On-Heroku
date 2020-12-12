@@ -1,0 +1,32 @@
+{
+	"name": "Fathom",
+	"description": "Fathom Lite. Simple, privacy-focused website analytics. Built with Golang & Preact.",
+	"keywords": ["analytics"],
+	"repository": "https://github.com/epicalxyz/fathom",
+	"scripts": {},
+	"env": {
+		"FATHOM_GZIP": "true",
+		"FATHOM_DATABASE_DRIVER": "postgres",
+		"FATHOM_SECRET": {
+			"description": "Some secret",
+			"generator": "secret"
+		}
+	},
+	"formation": {
+		"web": {
+			"quantity": 1,
+			"size": "free"
+		}
+	},
+	"addons": [
+		{
+			"plan": "heroku-postgresql",
+			"as": "FATHOM_DATABASE"
+		}
+	],
+	"buildpacks": [
+		{
+			"url": "https://github.com/epicalxyz/heroku-binary-buildpack.git"
+		}
+	]
+}
